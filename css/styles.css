@@ -423,11 +423,46 @@ text-align: center;
 }
 .subscribe-footer{
   display: inline-block;
+  align-items: baseline;
+  width: 264px;
+  height: 80px;
   margin-left:80px;
   gap:16px;
 }
 .subscribe-footer-label{
-  display: block;
+  display:block;
+  align-items: baseline;
   padding:16px;
-  
+  width: 264px;
+}
+  #footer-email{
+  width: 264px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background-color: #2E2F42;
+  }
+#footer-email::placeholder{
+  color: #ffffff;
+  padding: 8px 0px 8px 16px;
+}
+.sub-button{
+  display: inline-block;
+  width: 165px;
+  height: 40px;
+  text-align: left;
+}
+#footer-submit{
+  color:#ffffff;
+  background-color: #4D5AE5;
+  width: 165px;
+  height: 40px;
+  border-radius:4px;
+  margin-left: 24px;
+  padding:8px 64px 8px 24px;
+}
+.footer-svg{
+  position: absolute;
+  top: 3448px;
+  left: 1365px
 }
