@@ -571,6 +571,12 @@ text-align: center;
     outline: none;
     fill: #ffffff;
 }
+textarea::placeholder{
+  color: #2e2f4240;
+  font-family: "roboto" sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
 
 .modal-divs{
     position: relative;
@@ -593,18 +599,48 @@ text-align: center;
   --color5:#4D5AE5;
 }
 .check-and-p{
-    display: flex;
+  margin-bottom: 24px;
 }
-.check-p{
-    size: 12px;
-    color:#8e8f99;
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
-    margin: 0 auto;
+.label-checkbox {
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: #8e8f99;
 }
-.check-and-p a{
-    size:12px;
+
+
+.custom-checkbox {
+border-radius: 2px;
+border: 1px solid rgba(46, 47, 66, 0.4);
+width: 16px;
+height: 16px;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+fill: transparent;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+cursor: pointer;
+margin-right: 8px;
 }
+
+
+.input-checkbox:checked + .label-checkbox > .custom-checkbox {
+fill: #f4f4fd;
+border: none;
+background-color: #404BBF;
+}
+
+
+.input-checkbox:focus + .label-checkbox > .custom-checkbox {
+border-color: #404BBF;
+}
+.checkbox {
+margin-bottom: 24px;
+}
+
+
 #submit-button{
   display: block;
   cursor: pointer;
