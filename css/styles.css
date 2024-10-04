@@ -571,7 +571,8 @@ text-align: center;
     outline: none;
     fill: #ffffff;
 }
-textarea::placeholder{
+textarea::placeholder,
+.modal-input::placeholder{
   color: #2e2f4240;
   font-family: "roboto" sans-serif;
   font-weight: 400;
@@ -586,9 +587,9 @@ textarea::placeholder{
    height: 24px;
    position: absolute;
    left: 16px;
-   top: 50%;
+   top: 57%;
    fill:#2e2f42;
-   transform: translateY(-45%);
+   transform: translateY(-50%);
    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
 }
